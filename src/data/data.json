@@ -1,0 +1,149 @@
+[
+  {
+    "name": "cheap eats 1",
+    "video_url": "https://www.youtube.com/watch?v=c2NImC8p2A4",
+    "locations": [
+      {
+        "name": "Wah Fung",
+        "time_text": "0:49​"
+      },
+      {
+        "name": "Spicy Village",
+        "time_text": "1:57"
+      },
+      {
+        "name": "Bep Ga",
+        "time_text": "4:42"
+      },
+      {
+        "name": "Steam House",
+        "time_text": "7:29​"
+      },
+      {
+        "name": "Wu Wonton King",
+        "time_text": "10:44​"
+      },
+      {
+        "name": "Yifang Tea",
+        "time_text": "14:31"
+      },
+      {
+        "name": "Taiwan Bear House",
+        "time_text": "16:14"
+      },
+      {
+        "name": " King Dumpling",
+        "time_text": "18:52​"
+      },
+      {
+        "name": " Popeyes",
+        "time_text": "20:59"
+      }
+    ]
+  },
+  {
+    "name": "cheap eats 2",
+    "video_url": "https://www.youtube.com/watch?v=LJphYyNgny4&list=PLD56YYhzWk5sk7U84xKRfMehlEramGvNJ&index=3",
+    "locations": [
+      {
+        "name": "Yaya Tea House",
+        "time_text": "1:26​"
+      },
+      {
+        "name": "Banh Mi Saigon",
+        "time_text": "4:20​"
+      },
+      {
+        "name": "Viet Sandwich Deli",
+        "time_text": "7:25​"
+      },
+      {
+        "name": "Supertaste",
+        "time_text": "9:53​ "
+      },
+      {
+        "name": "Hakbox",
+        "time_text": "14:20​ ​"
+      },
+      {
+        "name": "Fong On",
+        "time_text": "16:41​​ ​"
+      },
+      {
+        "name": "May Wah Fast Food",
+        "time_text": "20:27​ ​"
+      },
+      {
+        "name": "Great NY Noodle town",
+        "time_text": "23:02​  ​"
+      },
+      {
+        "name": "Mei Lao Wah Bakery",
+        "time_text": "24:10​"
+      },
+      {
+        "name": "Dimsum GOGO",
+        "time_text": "26:35​ ​"
+      },
+      {
+        "name": "Buddha Bodai",
+        "time_text": "29:35​​"
+      },
+      {
+        "name": "Tigersugar",
+        "time_text": "32:35​ ​​"
+      }
+    ]
+  },
+  {
+    "name": "cheap eats 3",
+    "video_url": "https://www.youtube.com/watch?v=LpNbpV-AyCo&list=PLD56YYhzWk5sk7U84xKRfMehlEramGvNJ&index=10",
+    "locations": [
+      {
+        "name": "Yi Ji Shi Mo Noodle Corp",
+        "time_text": "02:05​​ ",
+        "notes": "The BEST/CHEAPEST Rice Rolls!"
+      },
+      {
+        "name": "Malaysia Beef Jerky",
+        "time_text": "04:43​ ​",
+        "notes": "Chinese sweet jerky!"
+      },
+      {
+        "name": "Yiwanmen ",
+        "time_text": "07:14​ ​",
+        "notes": "Cheap duck buns and noodles!"
+      },
+      {
+        "name": "Golden Steamer Inc. ",
+        "time_text": "09:30​ ​ ",
+        "notes": "Delicious baos by the dozen"
+      },
+      {
+        "name": "Pho Bang Restaurant",
+        "time_text": "11:13​  ​",
+        "notes": "Northern Viet treats"
+      },
+      {
+        "name": " Zongzi Lady Grand St. Station",
+        "time_text": "12:38​ ​",
+        "notes": "Handmade rice wraps by a sweet old lady"
+      },
+      {
+        "name": " Spring Cafe",
+        "time_text": "13:02​ ​",
+        "notes": "Hip vegan Chinese cafe on Canal"
+      },
+      {
+        "name": "Chun Yang Tea Chinatown",
+        "time_text": "16:22​  ​",
+        "notes": "Hip vegan Chinese cafe on Canal"
+      },
+      {
+        "name": "Deluxe Green Bo Restaurant ",
+        "time_text": "17:11​",
+        "notes": "Cheap Shanghainese food and soup Dumplings!"
+      }
+    ]
+  }
+]
