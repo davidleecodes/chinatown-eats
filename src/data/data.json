@@ -1,6 +1,6 @@
 [
   {
-    "name": "cheap eats 1",
+    "name": "episode 1",
     "video_url": "https://www.youtube.com/watch?v=c2NImC8p2A4",
     "locations": [
       {
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "name": "cheap eats 2",
+    "name": "episode 2",
     "video_url": "https://www.youtube.com/watch?v=LJphYyNgny4&list=PLD56YYhzWk5sk7U84xKRfMehlEramGvNJ&index=3",
     "locations": [
       {
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "name": "cheap eats 3",
+    "name": "episode 3",
     "video_url": "https://www.youtube.com/watch?v=LpNbpV-AyCo&list=PLD56YYhzWk5sk7U84xKRfMehlEramGvNJ&index=10",
     "locations": [
       {
@@ -143,6 +143,130 @@
         "name": "Deluxe Green Bo Restaurant ",
         "time_text": "17:11​",
         "notes": "Cheap Shanghainese food and soup Dumplings!"
+      }
+    ]
+  },
+  {
+    "name": "episode 4",
+    "video_url": "https://www.youtube.com/watch?v=7hbmVX47DOM&list=PLD56YYhzWk5sk7U84xKRfMehlEramGvNJ&index=4",
+    "locations": [
+      {
+        "name": "Cheong Fun on Hester St",
+        "time_text": "01:01​​",
+        "notes": "Resturant style",
+        "Dishes": [{ "name": "Rice roll", "price": 3 }]
+      },
+      {
+        "name": "Cheong Fun on Rutgers St",
+        "time_text": "03:26​ ​",
+        "notes": "HK style",
+        "Dishes": [{ "name": "Rice roll", "price": 3 }]
+      },
+      {
+        "name": "Yin Ji Chang",
+        "time_text": "05:28",
+        "notes": "Guangzhou style",
+        "Dishes": [
+          { "name": "Peanut Sause rice roll", "price": 5.95 },
+          { "name": "Fish & chive rice noodle", "price": 6.95 },
+          { "name": "Beef & shrimp rice noodle", "price": 3 }
+        ]
+      },
+      {
+        "name": "Tonii’s fresh Rice Rolls",
+        "time_text": "07:05​",
+        "notes": "Cantonese style",
+        "Dishes": [
+          { "name": "Tonii's special rice roll", "price": 4.5 },
+          { "name": "Duck rice noodle", "price": 6 }
+        ]
+      },
+      {
+        "name": "Happy Star Bakery",
+        "time_text": "08:46​",
+        "Dishes": [
+          { "name": "Shrimp & sausage rice roll", "price": 4 },
+          { "name": "Spam & egg rice roll", "price": 3 }
+        ]
+      },
+      {
+        "name": " Chang Lai Fishball and Noodles on Grand St",
+        "time_text": "09:48​ ​",
+        "Dishes": [{ "name": "Chang Lai Hong Kong fish balls", "price": 2.5 }]
+      },
+      {
+        "name": " New York Bo Ky",
+        "time_text": "11:49​",
+        "Dishes": [
+          { "name": "Cambodian Teochew dry noodles", "price": 7 },
+          { "name": "Beef stew", "price": 6 },
+          { "name": "Chicken curry", "price": 7 },
+          { "name": "Cuttlefish", "price": 6 },
+          { "name": "Lemongrass porkchop", "price": 9 }
+        ]
+      },
+      {
+        "name": "Taiwan PorkChop House",
+        "time_text": "16:49​",
+        "Dishes": [
+          { "name": "Pork Chop Over Rice", "price": 6.75 },
+          { "name": "Salt & Pepper Chicken Over Rice", "price": 6.75 },
+          { "name": "Taro ice", "price": 7 },
+          { "name": " Glutinous Rice Lotus Root ", "price": 6 },
+          { "name": "Savory Pan Fried Oyster Cake", "price": 7.95 }
+        ]
+      },
+      {
+        "name": "Tasty Hand Pulled Noodles ",
+        "time_text": "17:38",
+        "Dishes": [
+          { "name": "Hand pulled noodles", "price": 9 },
+          { "name": "Knife cut noodles", "price": 11.5 },
+          { "name": "Dumpling", "price": 5.25 }
+        ]
+      },
+      {
+        "name": "Jaya 888 ",
+        "time_text": "24:42",
+        "Dishes": [
+          { "name": "Moonlight river noodles", "price": 0 },
+          { "name": "Roti Telur", "price": 6.5 },
+          { "name": "Roti Canai", "price": 4.5 },
+          { "name": "Beef Rendang", "price": 20 },
+          { "name": "Chicken Curry me", "price": 9 }
+        ]
+      },
+
+      {
+        "name": "King’s Kitchen",
+        "time_text": "27:41",
+        "Dishes": [
+          { "name": "Roast Duck", "price": 7.95 },
+          { "name": "Crispy Duck", "price": 10.5 },
+          { "name": "Clay pot rice special combo", "price": 11 }
+        ]
+      },
+      {
+        "name": "Nuan Xin",
+        "time_text": "30:03",
+        "Dishes": [
+          { "name": "Rice rolls", "price": 7 },
+          { "name": "Spicy Garlic Chicken", "price": 5.25 }
+        ]
+      },
+      {
+        "name": "Vanessa's Dumpling House",
+        "time_text": "33:32",
+        "Dishes": [
+          { "name": "Sesame pancakes", "price": 4.5 },
+          { "name": "Bolied dumplings", "price": 5.5 },
+          { "name": "Pan fried dumplings", "price": 5.5 },
+          { "name": "Spicy wontons", "price": 6 }
+        ]
+      },
+      {
+        "name": "88 Lan Zhou Handmade Noodle",
+        "time_text": "36:45"
       }
     ]
   }
