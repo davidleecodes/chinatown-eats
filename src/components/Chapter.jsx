@@ -7,6 +7,7 @@ function Chapters({ locations, setCurrLoc, currLoc }) {
     <div class="list-group list-group-flush">
       {locations.map((loc) => (
         <a
+          href="/#"
           className={loc.id === currLoc.id ? classNameActive : className}
           key={loc.id}
           onClick={() => setCurrLoc(loc)}

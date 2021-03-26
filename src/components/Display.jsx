@@ -66,45 +66,31 @@ function Display({ item }) {
   }
 
   return (
-    <div className="d-flex flex-column h-100 py-3">
-      {/* <p>{item.name}</p> */}
-      {/* <InfoMap locations={locations} setCurrLoc={setCurrLoc}></InfoMap> */}
-
-      <div className="row mb-3">
-        <div className="col-9 ">
-          <div className="ratio ratio-16x9">
-            <NYoutube
-              item={item}
-              locations={locations}
-              setCurrLoc={setCurrLoc}
-              currLoc={currLoc}
-            ></NYoutube>
-          </div>
-        </div>
-        <div className="col-3  overflow-auto">
-          <div className="ratio">
-            <Chapters
-              locations={locations}
-              setCurrLoc={setCurrLoc}
-              currLoc={currLoc}
-            ></Chapters>
-          </div>
-        </div>
+    <div className="grid-container ">
+      <div className=" youtube-container">
+        <NYoutube
+          item={item}
+          locations={locations}
+          setCurrLoc={setCurrLoc}
+          currLoc={currLoc}
+        ></NYoutube>
       </div>
-
-      <div className="row flex-grow-1">
-        <div className="col-3">
-          <div className="ratio">
-            <Info currLoc={currLoc}></Info>
-          </div>
-        </div>
-        <div className="col-9 ">
-          <Map
-            locations={locations}
-            setCurrLoc={setCurrLoc}
-            currLoc={currLoc}
-          ></Map>
-        </div>
+      <div className="chapters-container overflow-auto">
+        <Chapters
+          locations={locations}
+          setCurrLoc={setCurrLoc}
+          currLoc={currLoc}
+        ></Chapters>
+      </div>
+      <div className="info-container">
+        <Info currLoc={currLoc}></Info>
+      </div>
+      <div className="map-container">
+        <Map
+          locations={locations}
+          setCurrLoc={setCurrLoc}
+          currLoc={currLoc}
+        ></Map>
       </div>
     </div>
   );

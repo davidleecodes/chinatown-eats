@@ -1,20 +1,23 @@
 import React from "react";
 
 function Videos({ data, currVid, setCurrVid }) {
-  let className = `list-group-item list-group-item-action`;
+  let className = `nav-link`;
   let classNameActive = `${className} active`;
   return (
-    <div class="list-group list-group-flush">
+    <ul className="nav nav-tabs">
       {data.map((vid) => (
-        <a
-          className={vid.name === currVid.name ? classNameActive : className}
-          key={vid.name}
-          onClick={() => setCurrVid(vid)}
-        >
-          <p>{vid.name}</p>
-        </a>
+        <li className="nav-item">
+          <a
+            href="/#"
+            className={vid.name === currVid.name ? classNameActive : className}
+            key={vid.name}
+            onClick={() => setCurrVid(vid)}
+          >
+            {vid.name}
+          </a>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 

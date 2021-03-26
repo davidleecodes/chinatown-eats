@@ -154,19 +154,19 @@
         "name": "Cheong Fun on Hester St",
         "time_text": "01:01​​",
         "notes": "Resturant style",
-        "Dishes": [{ "name": "Rice roll", "price": 3 }]
+        "dishes": [{ "name": "Rice roll", "price": 3 }]
       },
       {
         "name": "Cheong Fun on Rutgers St",
         "time_text": "03:26​ ​",
         "notes": "HK style",
-        "Dishes": [{ "name": "Rice roll", "price": 3 }]
+        "dishes": [{ "name": "Rice roll", "price": 3 }]
       },
       {
         "name": "Yin Ji Chang",
         "time_text": "05:28",
         "notes": "Guangzhou style",
-        "Dishes": [
+        "dishes": [
           { "name": "Peanut Sause rice roll", "price": 5.95 },
           { "name": "Fish & chive rice noodle", "price": 6.95 },
           { "name": "Beef & shrimp rice noodle", "price": 3 }
@@ -176,7 +176,7 @@
         "name": "Tonii’s fresh Rice Rolls",
         "time_text": "07:05​",
         "notes": "Cantonese style",
-        "Dishes": [
+        "dishes": [
           { "name": "Tonii's special rice roll", "price": 4.5 },
           { "name": "Duck rice noodle", "price": 6 }
         ]
@@ -184,7 +184,7 @@
       {
         "name": "Happy Star Bakery",
         "time_text": "08:46​",
-        "Dishes": [
+        "dishes": [
           { "name": "Shrimp & sausage rice roll", "price": 4 },
           { "name": "Spam & egg rice roll", "price": 3 }
         ]
@@ -192,12 +192,12 @@
       {
         "name": " Chang Lai Fishball and Noodles on Grand St",
         "time_text": "09:48​ ​",
-        "Dishes": [{ "name": "Chang Lai Hong Kong fish balls", "price": 2.5 }]
+        "dishes": [{ "name": "Chang Lai Hong Kong fish balls", "price": 2.5 }]
       },
       {
         "name": " New York Bo Ky",
         "time_text": "11:49​",
-        "Dishes": [
+        "dishes": [
           { "name": "Cambodian Teochew dry noodles", "price": 7 },
           { "name": "Beef stew", "price": 6 },
           { "name": "Chicken curry", "price": 7 },
@@ -208,7 +208,7 @@
       {
         "name": "Taiwan PorkChop House",
         "time_text": "16:49​",
-        "Dishes": [
+        "dishes": [
           { "name": "Pork Chop Over Rice", "price": 6.75 },
           { "name": "Salt & Pepper Chicken Over Rice", "price": 6.75 },
           { "name": "Taro ice", "price": 7 },
@@ -219,7 +219,7 @@
       {
         "name": "Tasty Hand Pulled Noodles ",
         "time_text": "17:38",
-        "Dishes": [
+        "dishes": [
           { "name": "Hand pulled noodles", "price": 9 },
           { "name": "Knife cut noodles", "price": 11.5 },
           { "name": "Dumpling", "price": 5.25 }
@@ -228,7 +228,7 @@
       {
         "name": "Jaya 888 ",
         "time_text": "24:42",
-        "Dishes": [
+        "dishes": [
           { "name": "Moonlight river noodles", "price": 0 },
           { "name": "Roti Telur", "price": 6.5 },
           { "name": "Roti Canai", "price": 4.5 },
@@ -240,7 +240,7 @@
       {
         "name": "King’s Kitchen",
         "time_text": "27:41",
-        "Dishes": [
+        "dishes": [
           { "name": "Roast Duck", "price": 7.95 },
           { "name": "Crispy Duck", "price": 10.5 },
           { "name": "Clay pot rice special combo", "price": 11 }
@@ -249,7 +249,7 @@
       {
         "name": "Nuan Xin",
         "time_text": "30:03",
-        "Dishes": [
+        "dishes": [
           { "name": "Rice rolls", "price": 7 },
           { "name": "Spicy Garlic Chicken", "price": 5.25 }
         ]
@@ -257,7 +257,7 @@
       {
         "name": "Vanessa's Dumpling House",
         "time_text": "33:32",
-        "Dishes": [
+        "dishes": [
           { "name": "Sesame pancakes", "price": 4.5 },
           { "name": "Bolied dumplings", "price": 5.5 },
           { "name": "Pan fried dumplings", "price": 5.5 },
