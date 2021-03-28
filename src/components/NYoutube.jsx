@@ -1,67 +1,104 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import YouTube from "react-youtube";
 
-function NYoutube({ item, locations, setCurrLoc, currLoc }) {
-  const [player, setPlayer] = useState(null);
-  let timer;
+function NYoutube({ videoCode, locations, setCurrLoc, currLoc, defaultStart }) {
+  const player = useRef(null);
+  const timer = useRef(null);
+  const [isPlay, setIsPlay] = useState(false);
+  const [isReady, setIsReady] = useState(false);
+
+  const clearInterval = () => {
+    window.clearTimeout(timer.current);
+  };
+
+  React.useEffect(() => {
+    console.log("CODE");
+    setIsPlay(false);
+    setIsReady(false);
+    updatePlayerInfo();
+    return clearInterval;
+  }, [videoCode]);
 
   useEffect(() => {
-    if (player) updatePlayerInfo();
-    // return clearTimeout(timer);
-  }, [player]);
+    let state = player.current && player.current.getPlayerState();
+    if (
+      player.current &&
+      currLoc &&
+      state &&
+      state !== 3 &&
+      state !== -1 &&
+      isReady
+    ) {
+      if (!isPlay) {
+        console.log("TIME", currLoc.time_sec, state);
+        player.current.seekTo(currLoc.time_sec);
+        setIsPlay(true);
+      } else {
+        let played = parseInt(player.current.getCurrentTime(), 10);
+        if (played > currLoc.time_sec && played < currLoc.time_sec_end) {
+        } else {
+          console.log(
+            "NYT SET",
+            currLoc.time_sec,
+            player,
+            player.current.getPlayerState()
+          );
 
-  useEffect(() => {
-    if (player && currLoc) {
-      player.seekTo(currLoc.time_sec);
-      // player.playVideo();
+          player.current.seekTo(currLoc.time_sec);
+        }
+      }
     }
-  }, [currLoc]);
-
-  let videoCode;
-  if (item.video_url) {
-    videoCode = item.video_url.split("v=")[1].split("&")[0];
-  }
+  }, [currLoc, isReady]);
 
   const opts = {
-    // height: "390",
-    // width: "640",
     height: "100%",
     width: "100%",
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
-      start: locations[0].time_sec,
+      autoplay: 0,
     },
   };
 
   function updatePlayerInfo() {
-    // console.log(parseInt(player.getCurrentTime(), 10));
-    let played = parseInt(player.getCurrentTime(), 10);
-    for (let i = 0; i < locations.length; i++) {
-      if (played > locations[locations.length - 1].time_sec) {
-        console.log("MMM", locations[i].name);
-        setCurrLoc(locations[locations.length - 1]);
-        break;
-      } else if (
-        played > locations[i].time_sec &&
-        played < locations[i + 1].time_sec
-      ) {
-        console.log("MMM", locations[i].name);
-        setCurrLoc(locations[i]);
-        break;
+    if (player.current && isReady) {
+      let played = parseInt(player.current.getCurrentTime(), 10);
+      for (let i = 0; i < locations.length; i++) {
+        if (played > locations[locations.length - 1].time_sec) {
+          console.log("MMM", locations[i].name);
+          setCurrLoc(locations[locations.length - 1]);
+          break;
+        } else if (
+          played > locations[i].time_sec &&
+          played < locations[i + 1].time_sec
+        ) {
+          if (locations[i].id !== currLoc.id) setCurrLoc(locations[i]);
+          console.log("MMM", locations[i].name);
+          break;
+        }
       }
     }
 
-    timer = setTimeout(function () {
+    timer.current = setTimeout(function () {
       updatePlayerInfo();
     }, 1000);
   }
 
+  function handleStateChange(e) {
+    console.log("STATE", e);
+    if (e.data === 1) {
+      setIsReady(true);
+    }
+  }
   return (
-    <YouTube
-      videoId={videoCode}
-      opts={opts}
-      onReady={(e) => setPlayer(e.target)}
-    />
+    <div>
+      {defaultStart && (
+        <YouTube
+          videoId={videoCode}
+          opts={opts}
+          onReady={(e) => (player.current = e.target)}
+          onStateChange={(e) => handleStateChange(e)}
+        />
+      )}
+    </div>
   );
 }
 

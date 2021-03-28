@@ -5,18 +5,18 @@ function Videos({ data, currVid, setCurrVid }) {
   let classNameActive = `${className} active`;
   return (
     <ul className="nav nav-tabs">
-      {data.map((vid) => (
-        <li className="nav-item">
-          <a
-            href="/#"
-            className={vid.name === currVid.name ? classNameActive : className}
-            key={vid.name}
-            onClick={() => setCurrVid(vid)}
-          >
-            {vid.name}
-          </a>
-        </li>
-      ))}
+      {data &&
+        data.map((vid) => (
+          <li className="nav-item" key={vid.id}>
+            <a
+              href="/#"
+              className={vid.id === currVid.id ? classNameActive : className}
+              onClick={() => setCurrVid(vid)}
+            >
+              {vid.name}
+            </a>
+          </li>
+        ))}
     </ul>
   );
 }

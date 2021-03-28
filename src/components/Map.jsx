@@ -15,7 +15,7 @@ function Map({ locations, setCurrLoc, currLoc }) {
     (loc) =>
       loc.data && (
         <span
-          key={loc.data.id}
+          key={loc.id}
           lat={loc.data.coordinates.latitude}
           lng={loc.data.coordinates.longitude}
           className={loc.id === currLoc.id ? classNameActive : classNameNA}
@@ -25,7 +25,6 @@ function Map({ locations, setCurrLoc, currLoc }) {
         </span>
       )
   );
-  console.log("MAPP");
 
   return (
     <GoogleMapReact

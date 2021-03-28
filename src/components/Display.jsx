@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { v4 as uuidv4 } from "uuid";
-import Info from "./Info";
 import axios from "axios";
+
+import Info from "./Info";
 import Map from "./Map";
 import NYoutube from "./NYoutube";
 import Chapters from "./Chapter";
-// import InfoMap from "./InfoMap";
 
-function Display({ item }) {
-  const [currLoc, setCurrLoc] = useState(0);
-  const [locations, setLocations] = useState(item.locations);
+function Display({ item, handleUpdateData }) {
+  const [currLoc, setCurrLoc] = useState(item.locations[0]);
 
   var yelp_url = "http://api.yelp.com/v3/businesses/search";
   var cors_proxy_url = "https://cors.bridged.cc/";
@@ -18,36 +16,43 @@ function Display({ item }) {
       setTimeout(resolve, ms);
     });
   }
+
+  useEffect(() => {
+    setCurrLoc(item.locations[0]);
+  }, [item]);
+
   useEffect(() => {
     let isMounted = true;
-    console.log("EFFECTS");
-    setCurrLoc(0);
-    let newLocations = item.locations.map((loc) => {
-      return { ...loc, time_sec: time_to_Sec(loc.time_text), id: uuidv4() };
-    });
-
-    setLocations(newLocations);
-
+    let newLocations = item.locations;
+    let locObj = {};
     (async function getYelpData() {
-      for (let loc of newLocations) {
-        let res = await axios.get(cors_proxy_url + yelp_url, {
-          headers: {
-            Authorization: `Bearer ${process.env.REACT_APP_YELP_KEY}`,
-          },
-          params: {
-            location: "Manhattan, NY",
-            limit: 5,
-            radius: 5000,
-            term: loc.name,
-          },
-        });
-        loc.data = res.data.businesses[0];
-        await wait(80);
-        // console.log(res);
-      }
-      if (isMounted) {
-        setLocations(newLocations);
-        setCurrLoc(newLocations[0]);
+      for (let i = 0; i < newLocations.length; i++) {
+        let loc = newLocations[i];
+        if (!loc.data) {
+          console.log("API");
+          try {
+            let res = await axios.get(cors_proxy_url + yelp_url, {
+              headers: {
+                Authorization: `Bearer ${process.env.REACT_APP_YELP_KEY}`,
+              },
+              params: {
+                location: "Manhattan, NY",
+                limit: 5,
+                radius: 5000,
+                term: loc.name,
+              },
+            });
+            loc.data = res.data.businesses[0];
+            locObj = { ...locObj, [loc.id]: loc.data };
+            if (isMounted) {
+              handleUpdateData(item.id, loc.data, loc.id);
+            }
+            if (!isMounted) break;
+          } catch (error) {
+            console.log(error);
+          }
+          // await wait(10);
+        }
       }
     })();
 
@@ -56,28 +61,20 @@ function Display({ item }) {
     };
   }, [item]);
 
-  console.log(locations);
-
-  function time_to_Sec(time) {
-    // console.log(time);
-    time = time.split(":");
-    let sec = parseInt(time[0], 10) * 60 + parseInt(time[1], 10);
-    return sec;
-  }
-
   return (
     <div className="grid-container ">
       <div className=" youtube-container">
         <NYoutube
-          item={item}
-          locations={locations}
+          videoCode={item.videoCode}
+          locations={item.locations}
           setCurrLoc={setCurrLoc}
           currLoc={currLoc}
+          defaultStart={item.locations[0].time_sec}
         ></NYoutube>
       </div>
       <div className="chapters-container overflow-auto">
         <Chapters
-          locations={locations}
+          locations={item.locations}
           setCurrLoc={setCurrLoc}
           currLoc={currLoc}
         ></Chapters>
@@ -87,7 +84,7 @@ function Display({ item }) {
       </div>
       <div className="map-container">
         <Map
-          locations={locations}
+          locations={item.locations}
           setCurrLoc={setCurrLoc}
           currLoc={currLoc}
         ></Map>

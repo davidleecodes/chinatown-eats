@@ -1,7 +1,7 @@
 import React from "react";
 
 function Info({ currLoc }) {
-  console.log(currLoc);
+  // console.log(currLoc);
   function displayInfo() {
     if (currLoc.data) {
       let data = currLoc.data;
@@ -28,7 +28,7 @@ function Info({ currLoc }) {
             {currLoc.dishes && (
               <ul className="list-unstyled">
                 {currLoc.dishes.map((d) => (
-                  <li key={d.name}>
+                  <li key={d.id}>
                     <span>{d.name}</span>
                     <p>{d.price.toFixed(2)}</p>
                   </li>
