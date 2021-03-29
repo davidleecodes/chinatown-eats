@@ -15,7 +15,7 @@ function About() {
   return (
     <div className="container text-center  my-5 justify-content-center">
       <div className="row justify-content-center">
-        <div className="col-8">
+        <div className="col-md-8 col-sm-12">
           <div className="ratio ratio-16x9">
             <YouTube videoId={videoCode} opts={opts} />
           </div>
