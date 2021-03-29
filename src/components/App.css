@@ -1,16 +1,25 @@
 .App {
   max-width: 1200px;
   margin: auto;
-  min-width: 500px;
   display: flex;
   flex-direction: column;
+}
+
+.episodes.nav {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+}
+
+.episodes .nav-link {
+  white-space: nowrap;
 }
 
 .grid-container {
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 35vh 58vh;
+  grid-template-rows: 35vh 52vh;
   column-gap: 0.5em;
   row-gap: 0.5em;
   padding: 1em;
@@ -38,10 +47,18 @@
   display: flex;
   flex-direction: column;
 }
+.chapters-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-wrap: nowrap;
+}
 
-@media screen and (max-width: 768px) {
+@media (max-width: 767.98px) {
   .grid-container {
-    grid-template-rows: 25vh 18vh auto;
+    grid-template-rows: calc(100vw * 9 / 16) 80px fit-content(200px) minmax(
+        100vw,
+        auto
+      );
     column-gap: 0.2em;
     row-gap: 0.2em;
     padding: 0.2em;
@@ -51,11 +68,22 @@
   }
 
   .chapters-container {
-    grid-column: span 3;
+    grid-column: span 12;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
   }
 
+  .chapters-container .list-group {
+    flex-direction: row;
+  }
+
+  .chapters-container .list-group .list-group-item p {
+    white-space: nowrap;
+    margin-bottom: 0;
+  }
   .info-container {
-    grid-column: span 9;
+    grid-column: span 12;
   }
 
   .map-container {
@@ -70,20 +98,29 @@
     flex-direction: row;
     height: 100%;
   }
-  .info .ratio {
+  .info .img-containter {
     /* width: 15vh; */
     display: none;
   }
-  .info hr:nth-child(1) {
+  .info hr:first-of-type {
     display: none;
   }
 
   .info-container address {
     margin: 0.5em;
-    flex-grow: 1;
+    width: 50%;
   }
 
+  .info-container .loading {
+    margin: auto;
+    height: 167px;
+  }
   .info .notes {
     width: 50%;
+    position: relative;
+  }
+
+  .info .notes .inner {
+    position: absolute;
   }
 }

@@ -72,7 +72,7 @@ function Display({ item, handleUpdateData }) {
           defaultStart={item.locations[0].time_sec}
         ></NYoutube>
       </div>
-      <div className="chapters-container overflow-auto">
+      <div className="chapters-container ">
         <Chapters
           locations={item.locations}
           setCurrLoc={setCurrLoc}

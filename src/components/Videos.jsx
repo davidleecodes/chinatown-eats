@@ -4,7 +4,7 @@ function Videos({ data, currVid, setCurrVid }) {
   let className = `nav-link`;
   let classNameActive = `${className} active`;
   return (
-    <ul className="nav nav-tabs">
+    <ul className=" episodes nav nav-tabs">
       {data &&
         data.map((vid) => (
           <li className="nav-item" key={vid.id}>
