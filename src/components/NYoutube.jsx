@@ -4,17 +4,16 @@ import YouTube from "react-youtube";
 function NYoutube({ videoCode, locations, setCurrLoc, currLoc, defaultStart }) {
   const player = useRef(null);
   const timer = useRef(null);
-  const [isPlay, setIsPlay] = useState(false);
   const [isReady, setIsReady] = useState(false);
-
+  const isPlayed = useRef(false);
   const clearInterval = () => {
     window.clearTimeout(timer.current);
   };
 
   React.useEffect(() => {
     console.log("CODE");
-    setIsPlay(false);
     setIsReady(false);
+    isPlayed.current = false;
     updatePlayerInfo();
     return clearInterval;
   }, [videoCode]);
@@ -29,10 +28,10 @@ function NYoutube({ videoCode, locations, setCurrLoc, currLoc, defaultStart }) {
       state !== -1 &&
       isReady
     ) {
-      if (!isPlay) {
+      if (!isPlayed.current) {
         console.log("TIME", currLoc.time_sec, state);
         player.current.seekTo(currLoc.time_sec);
-        setIsPlay(true);
+        isPlayed.current = true;
       } else {
         let played = parseInt(player.current.getCurrentTime(), 10);
         if (played > currLoc.time_sec && played < currLoc.time_sec_end) {
@@ -59,7 +58,10 @@ function NYoutube({ videoCode, locations, setCurrLoc, currLoc, defaultStart }) {
   };
 
   function updatePlayerInfo() {
-    if (player.current && isReady) {
+    // console.log(
+    //   player.current && parseInt(player.current.getCurrentTime(), 10)
+    // );
+    if (player.current && isPlayed.current) {
       let played = parseInt(player.current.getCurrentTime(), 10);
       for (let i = 0; i < locations.length; i++) {
         if (played > locations[locations.length - 1].time_sec) {
@@ -79,17 +81,30 @@ function NYoutube({ videoCode, locations, setCurrLoc, currLoc, defaultStart }) {
 
     timer.current = setTimeout(function () {
       updatePlayerInfo();
-    }, 1000);
+    }, 800);
   }
 
   function handleStateChange(e) {
-    console.log("STATE", e);
+    // console.log("STATE", e);
     if (e.data === 1) {
       setIsReady(true);
     }
   }
   return (
-    <div>
+    <div
+      // onFocus={() => {
+      //   console.log(true);
+      //   // updatePlayerInfo();
+      // }}
+      onMouseEnter={() => {
+        console.log(true);
+        // updatePlayerInfo();
+      }}
+      onMouseLeave={() => {
+        console.log(false);
+        // clearInterval();
+      }}
+    >
       {defaultStart && (
         <YouTube
           videoId={videoCode}
