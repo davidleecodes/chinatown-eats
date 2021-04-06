@@ -5,39 +5,98 @@
     "locations": [
       {
         "name": "Wah Fung",
-        "time_text": "0:49​"
+        "time_text": "0:49​",
+        "dishes": [
+          { "name": "roast chicken", "price": 4.5 },
+          { "name": "roast duck", "price": 4.5 },
+          { "name": "roast pork", "price": 4.5 },
+          { "name": "bbq pork", "price": 4.5 }
+        ]
       },
       {
         "name": "Spicy Village",
-        "time_text": "1:57"
+        "time_text": "1:57",
+        "dishes": [
+          { "name": "pepper chicken", "price": 8 },
+          { "name": "hui beef noodles", "price": 8 },
+          { "name": "tomato egg noodles", "price": 8 },
+          { "name": "henan soup dumplings", "price": 8 },
+          { "name": "minced pork sandwich", "price": 5 }
+        ]
       },
       {
         "name": "Bep Ga",
-        "time_text": "4:42"
+        "time_text": "4:42",
+        "dishes": [
+          { "name": "chicken pho", "price": 12 },
+          { "name": "chicken salad (dry pho)", "price": 12 },
+          { "name": "merguez bahn mi", "price": 8 },
+          { "name": "poached chicken on rice", "price": 12 }
+        ]
       },
       {
         "name": "Steam House",
-        "time_text": "7:29​"
+        "time_text": "7:29​",
+        "dishes": [
+          { "name": "everything cheung fun", "price": 6 },
+          { "name": "soy sauce chicken", "price": 7 },
+          { "name": "curry chicken rice w. potatoes", "price": 5 },
+          { "name": "bbq beef noodles", "price": 8 },
+          { "name": "ramen", "price": 8 },
+          { "name": "tofu pudding", "price": 2 }
+        ]
       },
       {
         "name": "Wu Wonton King",
-        "time_text": "10:44​"
+        "time_text": "10:44​",
+        "dishes": [
+          { "name": "cantonese wonton", "price": 7.5 },
+          { "name": "gao choi dumplings", "price": 7.5 },
+          { "name": "shrimp dumpling", "price": 7.5 },
+          { "name": "scallion ginger noodles", "price": 8 },
+          { "name": "wonton soup", "price": 7 },
+          { "name": "salt pepper pork chops", "price": 6.25 },
+          { "name": "beef brisket w. tendon", "price": 8 },
+          { "name": "shrimp dumpling", "price": 4 }
+        ]
       },
       {
         "name": "Yifang Tea",
-        "time_text": "14:31"
+        "time_text": "14:31",
+        "dishes": [
+          { "name": "fresh fruit yifan fruit tea", "price": 5.75 },
+          { "name": "brown sugar peral matcha latte", "price": 7.25 },
+          { "name": "mango pomelo sago", "price": 7.75 }
+        ]
       },
       {
         "name": "Taiwan Bear House",
-        "time_text": "16:14"
+        "time_text": "16:14",
+        "dishes": [
+          { "name": "fried chicken leg", "price": 11 },
+          { "name": "golden crust pork chop", "price": 11 },
+          { "name": "crispy popcorn chicken", "price": 6 },
+          { "name": "railroad pork chop", "price": 6.5 }
+        ]
       },
       {
         "name": " King Dumpling",
-        "time_text": "18:52​"
+        "time_text": "18:52​",
+        "dishes": [
+          { "name": "pork & chive dumplings", "price": 1.5 },
+          { "name": "peanut sauce noodles", "price": 2.5 },
+          { "name": "pan fried dumplings", "price": 2.5 },
+          { "name": "sesame pancake w. roast duck", "price": 3.25 },
+          { "name": "bolied dumplings", "price": 1.5 }
+        ]
       },
       {
         "name": " Popeyes",
-        "time_text": "20:59"
+        "time_text": "20:59",
+        "dishes": [
+          { "name": "popcorn shrimp", "price": 5.49 },
+          { "name": "cajun rice", "price": 1.79 }
+        ]
       }
     ]
   },
