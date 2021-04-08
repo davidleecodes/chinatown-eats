@@ -106,51 +106,111 @@
     "locations": [
       {
         "name": "Yaya Tea House",
-        "time_text": "1:26​"
+        "time_text": "1:26​",
+        "dishes": [
+          { "name": "large onigiri rice ball", "price": 5 },
+          { "name": "boba drinks", "price": 5 },
+          { "name": "gyoza", "price": 4.75 },
+          { "name": "shumai", "price": 4 },
+          { "name": "tokyo bowl", "price": 8 },
+          { "name": "beef udon", "price": 7.25 }
+        ]
       },
       {
         "name": "Banh Mi Saigon",
-        "time_text": "4:20​"
+        "time_text": "4:20​",
+        "dishes": [
+          { "name": "sardine banh mi", "price": 7 },
+          { "name": "shrimp & onion banh mi", "price": 8.5 },
+          { "name": "curry chicken banh mi", "price": 8.5 },
+          { "name": "grilled chicken banh mi", "price": 8.5 }
+        ]
       },
       {
         "name": "Viet Sandwich Deli",
-        "time_text": "7:25​"
+        "time_text": "7:25​",
+        "dishes": [
+          { "name": "grilled chicken banh mi", "price": 8.25 },
+          { "name": "house special banh mi", "price": 8.25 }
+        ]
       },
       {
         "name": "Supertaste",
-        "time_text": "9:53​ "
+        "time_text": "9:53​ ",
+        "dishes": [
+          { "name": "pork bao", "price": 2 },
+          { "name": "pan fried potstickers", "price": 3.5 },
+          { "name": "shoyu tamago", "price": 1.75 },
+          { "name": "stew p0rk chinese burger", "price": 3.5 },
+          { "name": "beef noodle", "price": 9.75 },
+          { "name": "spicy pork noodle soup", "price": 8.75 }
+        ]
       },
       {
         "name": "Hakbox",
-        "time_text": "14:20​ ​"
+        "time_text": "14:20​ ​",
+        "dishes": [
+          { "name": "hak rolls", "price": 2.5 },
+          { "name": "hak tofu", "price": 5 },
+          { "name": "hak dumpling", "price": 4.5 }
+        ]
       },
       {
         "name": "Fong On",
-        "time_text": "16:41​​ ​"
+        "time_text": "16:41​​ ​",
+        "dishes": [
+          { "name": "savory tofu", "price": 5.5 },
+          { "name": "sweet tofu", "price": 5.5 },
+          { "name": "rice cake", "price": 6 },
+          { "name": "grass jelly", "price": 4 },
+          { "name": "grass jelly", "price": 4 }
+        ]
       },
       {
         "name": "May Wah Fast Food",
-        "time_text": "20:27​ ​"
+        "time_text": "20:27​ ​",
+        "dishes": [
+          { "name": "fried chicken over rice", "price": 6.5 },
+          { "name": "pork chop over rice", "price": 6.5 }
+        ]
       },
       {
         "name": "Great NY Noodle town",
-        "time_text": "23:02​  ​"
+        "time_text": "23:02​"
       },
       {
         "name": "Mei Lao Wah Bakery",
-        "time_text": "24:10​"
+        "time_text": "24:10​",
+        "dishes": [
+          { "name": "steamed bao", "price": 1.75 },
+          { "name": "big bun", "price": 2.6 },
+          { "name": "coconut bun", "price": 2 }
+        ]
       },
       {
         "name": "Dimsum GOGO",
-        "time_text": "26:35​ ​"
+        "time_text": "26:35​ ​",
+        "dishes": [
+          { "name": "dim sum platter", "price": 15.95 },
+          { "name": "shrimp wrapped mango", "price": 5 },
+          { "name": "spinach dumplings", "price": 5 },
+          { "name": "chicken feet ", "price": 5 }
+        ]
       },
       {
         "name": "Buddha Bodai",
-        "time_text": "29:35​​"
+        "time_text": "29:35​​",
+        "dishes": [
+          { "name": "vegan cha siu", "price": 6.95 },
+          { "name": "vegetarian shumai", "price": 3.5 },
+          { "name": "vegetarian shrimp dumplings", "price": 3.5 },
+          { "name": "vegetatian pork bun", "price": 3.5 }
+        ]
       },
       {
         "name": "Tigersugar",
-        "time_text": "32:35​ ​​"
+        "time_text": "32:35​ ​​",
+        "dishes": [{ "name": "brown sugar boba", "price": 5.5 }]
       }
     ]
   },
