@@ -10,7 +10,7 @@ function Chapters({ locations, setCurrLoc, currLoc }) {
     element.scrollIntoView({ behavior: "smooth" });
   }, [currLoc]);
   return (
-    <div class="list-group list-group-flush chapters">
+    <div className="list-group list-group-flush chapters">
       {locations.map((loc) => (
         <a
           href="/#"
