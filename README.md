@@ -7,16 +7,21 @@ Being Chinese American and having worked near Chinatown, I wanted to try out som
 
 ## Tech
 
---frontend
+-- frontend
 
 - [ReactJS]
-- [Bootstrap] -[axios] -[google-map-react] -[react-youtube] -[uuid] -[cors-proxy]
+- [Bootstrap]
+- [axios]
+- [google-map-react]
+- [react-youtube]
+- [uuid]
+- [cors-proxy]
 
---api
+-- api
 
-- [YoutubeAPI]
-- [GoogleMapsAPI]
-- [YelpAPI]
+- YoutubeAPI
+- GoogleMapsAPI
+- YelpAPI
 
 [reactjs]: https://reactjs.org/
 [bootstrap]: https://getbootstrap.com/
