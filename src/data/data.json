@@ -221,47 +221,108 @@
       {
         "name": "Yi Ji Shi Mo Noodle Corp",
         "time_text": "02:05​​ ",
-        "notes": "The BEST/CHEAPEST Rice Rolls!"
+        "notes": "The BEST/CHEAPEST Rice Rolls!",
+        "dishes": [
+          { "name": "roast pork rice roll", "price": 2.75 },
+          { "name": "roast pork rice roll with cilantro ", "price": 3 },
+          { "name": "corn rice roll ", "price": 2.5 },
+          { "name": "curry fish ball ", "price": 2.5 },
+          { "name": "dried shrimp rice roll ", "price": 3 },
+          { "name": "shrimp rice roll ", "price": 3 },
+          { "name": "curry fish ball rice roll", "price": 3 },
+          { "name": "pork and egg rice roll", "price": 3 },
+          { "name": "pork with dried veggies congee", "price": 4 },
+          { "name": "soybean congee dessert ", "price": 2.25 },
+          { "name": "black sesame congee dessert ", "price": 2.25 }
+        ]
       },
       {
         "name": "Malaysia Beef Jerky",
         "time_text": "04:43​ ​",
-        "notes": "Chinese sweet jerky!"
+        "notes": "Chinese sweet jerky!",
+        "dishes": [
+          { "name": "beef jerky", "price": 6 },
+          { "name": "chicken jerky", "price": 5.75 },
+          { "name": "pork jerky ", "price": 5.75 }
+        ]
       },
       {
         "name": "Yiwanmen ",
         "time_text": "07:14​ ​",
-        "notes": "Cheap duck buns and noodles!"
+        "notes": "Cheap duck buns and noodles!",
+        "dishes": [
+          { "name": "roast duck bao", "price": 3.95 },
+          { "name": "beef bao", "price": 3 },
+          { "name": "pork belly bao ", "price": 3 },
+          { "name": "roaste duck street wrap  ", "price": 7 }
+        ]
       },
       {
         "name": "Golden Steamer Inc. ",
         "time_text": "09:30​ ​ ",
-        "notes": "Delicious baos by the dozen"
+        "notes": "Delicious baos by the dozen",
+        "dishes": [
+          { "name": "clasic sausage bun", "price": 6 },
+          { "name": "roast duck bao", "price": 6 },
+          { "name": "salted egg yolk bun", "price": 6 },
+          { "name": "pumpkin bun ", "price": 6 }
+        ]
       },
       {
         "name": "Pho Bang Restaurant",
         "time_text": "11:13​  ​",
-        "notes": "Northern Viet treats"
+        "notes": "Northern Viet treats",
+        "dishes": [
+          { "name": "banh tap", "price": 9.25 },
+          { "name": "bun cha ha noi", "price": 10.25 },
+          { "name": "bun tom nuong", "price": 11 }
+        ]
       },
       {
         "name": " Zongzi Lady Grand St. Station",
         "time_text": "12:38​ ​",
-        "notes": "Handmade rice wraps by a sweet old lady"
+        "notes": "Handmade rice wraps by a sweet old lady",
+        "dishes": [{ "name": "sticky rice dumpling", "price": 1.5 }]
       },
       {
         "name": " Spring Cafe",
         "time_text": "13:02​ ​",
-        "notes": "Hip vegan Chinese cafe on Canal"
+        "notes": "Hip vegan Chinese cafe on Canal",
+        "dishes": [
+          { "name": "black papper mushroom bao", "price": 4.25 },
+          { "name": "braised tofu skin bao", "price": 4.25 },
+          { "name": "ginger vegan chicken bao", "price": 4.25 },
+          { "name": "braised gluten bao", "price": 4.25 },
+          { "name": "ube sandwich", "price": 5.95 },
+          { "name": "zhajiang noodle salad", "price": 11.95 },
+          { "name": "kale smoothie", "price": 6.95 }
+        ]
       },
       {
         "name": "Chun Yang Tea Chinatown",
         "time_text": "16:22​  ​",
-        "notes": "Hip vegan Chinese cafe on Canal"
+        "notes": "High quality Oolong tea",
+        "dishes": [
+          { "name": "honey osmanthus oolong tea latte", "price": 5.5 },
+          { "name": "honey osmanthus oolong tea", "price": 5.25 },
+          { "name": "orange mountain tea", "price": 6.75 }
+        ]
       },
       {
         "name": "Deluxe Green Bo Restaurant ",
         "time_text": "17:11​",
-        "notes": "Cheap Shanghainese food and soup Dumplings!"
+        "notes": "Cheap Shanghainese food and soup Dumplings!",
+        "dishes": [
+          { "name": "Shredded pork cabbage rice cake", "price": 8.95 },
+          { "name": "shanghai lo mein", "price": 9.95 },
+          { "name": "spicy wontons", "price": 6.95 },
+          { "name": "pork and carb soup dumpling", "price": 7.5 },
+          { "name": "grilled buns", "price": 6.5 },
+          { "name": "wine chicken", "price": 7.95 },
+          { "name": "shanghai kau fu", "price": 6.95 },
+          { "name": "cucumber with garluc sauce", "price": 5.95 },
+          { "name": "scallion pancake", "price": 3.5 }
+        ]
       }
     ]
   },
