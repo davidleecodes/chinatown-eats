@@ -10,7 +10,7 @@ function Display({ item, handleUpdateData }) {
   const [currLoc, setCurrLoc] = useState(item.locations[0]);
 
   var yelp_url = "http://api.yelp.com/v3/businesses/search";
-  var cors_proxy_url = "https://cors.bridged.cc/";
+  var cors_proxy_url = "https://web-production-2be4.up.railway.app/";
   async function wait(ms) {
     return new Promise((resolve) => {
       setTimeout(resolve, ms);
